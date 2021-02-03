@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>euro-radar.maxximo-software.de</title>
+    <style>
+        .container{
+            width: 600px;
+        }
+        .table{
+            width: 600px;
+            text-align: center;
+            font-size: 21px;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h2>Sehr geehrter {{$details['firstname']}} {{$details['lastname']}}</h2>
+		 <p>es liegt ein neuer Auftrag für Sie vor: </p>
+        <div  class="container">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>
+                            item
+                        </th>
+                        <td>
+                            value
+                        </td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                           Country
+                        </td>
+                        <td>
+                            {{ $details['country'] }}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                           City
+                        </td>
+                        <td>
+                            {{ $details['city'] }}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                           Street
+                        </td>
+                        <td>
+                            {{ $details['street'] }}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                           Zip code
+                        </td>
+                        <td>
+                            {{ $details['zip_code'] }}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                           UZ
+                        </td>
+                        <td>
+                            {{ $details['city_name'] }}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                           Number
+                        </td>
+                        <td>
+                            {{ $details['car_number'] }}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                           Color
+                        </td>
+                        <td>
+                            {{ $details['car_color'] }}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                           Brand
+                        </td>
+                        <td>
+                            {{ $details['car_brand'] }}
+                        </td>
+                    </tr>
+        
+                    
+                </tbody>
+            </table><br>
+        </div>
+        <a href="localhost:8000/accept">Accept</a></div>      
+    </center>
+    
+</body>
+</html>
